@@ -1,4 +1,4 @@
-**User Data Script (Amazon Linux 2 with Apache)**
+## User Data Script (Amazon Linux 2 with Apache)
 
 ## When launching your EC2, paste this in Advanced → User Data:
 ```
