@@ -25,7 +25,7 @@ Before you Begin:
            mount /dev/xvdb newVolume/
            mount -all
            ```
-      - 4. sudo xfs_growfs -d /dev/xvdb   # Use the xfs_growfs command and specify the mount point of the file system
-      - 5. sudo growpart /dev/xvda 1   # Extend the partition. Use the growpart command and specify the device name and the partition number.
+      - 4. sudo xfs_growfs -d /dev/xvdb        # Use the xfs_growfs command and specify the mount point of the file system
+      - 5. sudo growpart /dev/xvda 1         # Extend the partition. Use the growpart command and specify the device name and the partition number.
 
 Check whether the volume has a partition. Use the lsblk command.
