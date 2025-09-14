@@ -104,7 +104,7 @@ verify_backup() {
 ## 1. CI/CD Pipeline Scripts
 
 ### Build and Deploy Script
-```bash
+```
 #!/bin/bash
 # build-deploy.sh
 set -e
@@ -124,7 +124,7 @@ kubectl set image deployment/$APP_NAME $APP_NAME=$REGISTRY/$APP_NAME:$VERSION
 ```
 
 ### Test Automation Script
-```bash
+```
 #!/bin/bash
 # run-tests.sh
 export NODE_ENV=test
@@ -146,7 +146,7 @@ fi
 ## 2. Infrastructure Management
 
 ### AWS Resource Cleanup
-```bash
+```
 #!/bin/bash
 # cleanup-aws-resources.sh
 REGION="us-east-1"
@@ -167,7 +167,7 @@ xargs -r aws ec2 delete-volume --volume-id
 ```
 
 ### Kubernetes Health Check
-```bash
+```
 #!/bin/bash
 # k8s-health-check.sh
 NAMESPACE="production"
@@ -186,7 +186,7 @@ fi
 ## 3. Monitoring and Alerting
 
 ### System Health Monitor
-```bash
+```
 #!/bin/bash
 # system-monitor.sh
 THRESHOLD=80
@@ -205,7 +205,7 @@ fi
 ```
 
 ### Log Analysis Script
-```bash
+```
 #!/bin/bash
 # analyze-logs.sh
 LOG_FILE="/var/log/application.log"
@@ -224,7 +224,7 @@ fi
 ## 4. Database Operations
 
 ### Database Backup Script
-```bash
+```
 #!/bin/bash
 # db-backup.sh
 DB_HOST="prod-db.cluster-xyz.us-east-1.rds.amazonaws.com"
@@ -241,7 +241,7 @@ find $BACKUP_DIR -name "*.sql" -mtime +7 -delete
 ```
 
 ### Database Migration Script
-```bash
+```
 #!/bin/bash
 # migrate-db.sh
 ENVIRONMENT=${1:-staging}
@@ -264,7 +264,7 @@ fi
 ## 5. Security and Compliance
 
 ### Security Scan Script
-```bash
+```
 #!/bin/bash
 # security-scan.sh
 IMAGE_NAME=$1
@@ -281,7 +281,7 @@ fi
 ```
 
 ### SSL Certificate Check
-```bash
+```
 #!/bin/bash
 # check-ssl-certs.sh
 DOMAINS=("example.com" "api.example.com" "admin.example.com")
@@ -303,7 +303,7 @@ done
 ## 6. Development Workflow
 
 ### Git Hook Script
-```bash
+```
 #!/bin/bash
 # pre-commit hook
 npm run lint
@@ -322,7 +322,7 @@ fi
 ```
 
 ### Environment Setup Script
-```bash
+```
 #!/bin/bash
 # setup-dev-env.sh
 echo "Setting up development environment..."
@@ -345,7 +345,7 @@ echo "✅ Development environment ready"
 ## 7. Performance and Optimization
 
 ### Performance Test Script
-```bash
+```
 #!/bin/bash
 # performance-test.sh
 URL="https://api.example.com/health"
@@ -365,7 +365,7 @@ fi
 ## 8. Modern DevOps Trends
 
 ### Container Orchestration
-```bash
+```
 #!/bin/bash
 # k8s-rolling-update.sh
 DEPLOYMENT=$1
@@ -382,7 +382,7 @@ fi
 ```
 
 ### GitOps Workflow
-```bash
+```
 #!/bin/bash
 # gitops-sync.sh
 REPO_URL="https://github.com/company/k8s-manifests.git"
